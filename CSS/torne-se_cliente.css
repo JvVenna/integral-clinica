@@ -3,376 +3,110 @@
   padding: 0%;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  background-color: rgb(255, 255, 255, 0.8);
-}
-
-#submenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-family: "Abyssinica SIL", serif;
-  font-family: "Inter Tight", sans-serif;
-  border-bottom: 1px solid #cbcaca;
-  font-size: 15px;
-  letter-spacing: 1.5px;
-  padding: 2px 0;
-}
-
-/*--------------------LEFT--------------------*/
-
-.contactsSubmenu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 45vh;
-}
-
-/*--------------------BETWEEN--------------------*/
-
-#menuDropdownSubmenu {
-  cursor: pointer;
-}
-
-.btnmenuDropdownSubmenu {
-  padding: 1px 10px;
-  border-radius: 3px;
-}
-
-.dropdownSubmenu-img {
-  width: 15px;
-  margin-left: 5px;
-}
-
-.contentDropdownSubmenu {
-  background-color: white;
-  display: none;
-  position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-}
-
-.optionDropdownSubmenu-a {
-  text-decoration: none;
-  color: black;
-}
-
-.titleDropdownSubmenu {
-  color: #14c2e8;
-  padding: 6px;
-  border-bottom: 1px solid #bfbfbf;
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 13px;
-  background-color: rgba(4, 247, 255, 0.1);
-}
-
-.optionDropdownSubmenu {
-  padding: 10px 20px;
-  font-size: 14px;
-}
-
-/*----------HOVER-BETWEEN----------*/
-
-.btnmenuDropdownSubmenu:hover {
-  background-color: rgb(210, 210, 210, 0.4);
-}
-
-#menuDropdownSubmenu:hover .dropdownSubmenu-img {
-  transform: scale(1) rotate(180deg);
-  transition: 0.5s;
-}
-
-.optionDropdownSubmenu:hover {
-  background-color: rgb(210, 210, 210, 0.2);
-}
-
-#menuDropdownSubmenu:hover .contentDropdownSubmenu {
-  display: block;
-}
-
-#menuDropdownSubmenu:hover .dropdownSubmenu-img {
-  transform: scale(1) rotate(180deg);
-  transition: 0.5s;
-}
-
-/*--------------------RIGHT--------------------*/
-
-#socialSubmenu {
-  display: flex;
-  width: 35vh;
-  justify-content: space-between;
-}
-
-#socialSubmenu,
-.socialSubmenu-img {
-  display: flex;
-  align-items: center;
-}
-
-.socialSubmenu-img {
-  width: 15px;
-  padding: 2px 3px;
-  border-radius: 3px;
-}
-
-/*----------RIGHT-HOVER----------*/
-
-.socialSubmenu-img:hover {
-  background-color: rgb(210, 210, 210, 0.4);
-}
-
-/*----------------------------MENU----------------------------*/
-
-#menu {
-  display: flex;
-  justify-content: space-around;
-  font-family: Montserrat;
-  border-bottom: 5px solid #14c2e8;
-  box-shadow: 5px 5px 5px 1px rgba(141, 140, 140, 0.5);
-  height: 5em;
-}
-
-.logoMenu {
-  display: flex;
-  align-items: center;
-  font-size: 2em;
-}
-
-.logoMenu-a {
-  text-decoration: none;
-  color: #14c2e8;
-  font-family: Montserrat;
-  display: flex;
-  justify-content: center;
-}
-
-.menuMenu {
-  display: flex;
-  width: 50em;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.btnMenu-a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.1em;
-  font-weight: 400.3;
-}
-
-.btnEntrarMenu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #14c2e8;
-  width: 15vh;
-  padding: 0.2em 0;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 400.3;
-}
-
-.btnEntrarMenu-img {
-  width: 3vh;
-}
-
-.containerLogin {
-  display: none;
-  border-radius: 0 0 0.5vw 0.5vw;
-  position: absolute;
-  background-color: rgb(240, 240, 240);
-  flex-direction: column;
-  box-shadow: 0vw 0.5vw 1vw 0.1vw rgb(0, 0, 0, 20%);
-  top: 73%;
-left: 80%;
-}
-
-.titleContainerLogin {
-  background-color: #14c1e86c;
-  padding: 0.5vw;
-  border-bottom: 0.1vw solid rgba(0, 0, 0, 0.2);
-}
-
-.inputContainer {
-  border-radius: 0.5vw;
-  height: 1.5vw;
-  border: 0.1vw solid black;
-  margin: 1vw 1vw 0vw 1vw;
-  padding: 0.2vw;
-  text-align: center;
-  font-size: 0.9vw;
-}
-
-.inputContainer::placeholder {
-  color: #14c1e8bc;
-  display: flex;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-}
-
-.textContainer {
-  margin: 0vw 1vw;
-  font-size: 0.9vw;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  height: 4vw;
-  justify-content: space-evenly;
-}
-
-.clickHereContainer {
-  display: flex;
-  justify-content: right;
-  cursor: pointer;
-}
-.clickHere-a {
-text-decoration: none;
-color: black;
-}
-
-/*----------MENU-HOVER----------*/
-
-.logoMenu-a:hover {
-  opacity: 0.5;
-}
-
-.btnMenu-a:hover {
-  color: #14c2e8;
-}
-
-.btnEntrarMenu:hover {
-  color: white;
-}
-
-.clickHereContainer:hover {
-  color: rgb(0, 115, 255);
-}
-
-.clickHere-a:hover{
-  color: #14c2e8;
-}
-
-/*=====================ALINHADOR==================================*/
+/* ::============ALINHADOR==================================*/
 
 #alinhador {
   width: 100%;
   height: 11vh;
 }
 
-#img {
-  width: 100%;
-}
 #title {
-  font-family: "Abyssinica SIL", serif;
-  font-family: "Inter Tight", sans-serif;
+  font-family: montserrat;
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 1.5vw;
-  line-height: 4vw;
-  margin: 1vw;
-  padding-bottom: 2vw;
-  border-bottom: solid 0.1vw rgba(0, 0, 0, 0.2);
-  letter-spacing: 1.5px;
+  font-size: 1.5em;
+  margin: 1em;
+  padding-bottom: 1em;
+  border-bottom: solid 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
+  margin: 3em 10%;
 }
 
 /*BOX------------------------------*/
 
-.imgBox {
-  display: flex;
-  border-radius: 10px;
-  height: 40vw;
-  box-shadow: -0.5vw 0vw 2vw 0.1vw rgba(0, 0, 0, 0.5);
+.imgBox, .imgBox2 {
+  border-radius: 5px;
+  height: 30em;
+  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.5);
 }
-#box {
+
+#box, #box2, #box3 {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  margin: 10vw;
+  margin: 0 10%;
 }
-.allContentBox {
+
+.allContentBox, .allContentBox2 {
   background-color: aqua;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   font-family: Montserrat;
-  font-size: 1.3vw;
+  font-size: 1.2em;
   border-radius: 0px 10px 10px 0px;
-  width: 100%;
-  box-shadow: 0.3vw 0vw 1vw 0.1vw rgba(0, 0, 0, 0.4);
-  height: 34vw;
+  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+  padding: 1em;
 }
-.titleBox {
+
+.titleBox, .titleBox3 {
   font-family: Montserrat;
-  font-size: 1.3vw;
+  font-size: 1.3em;
   display: flex;
   justify-content: center;
-  letter-spacing: 0.1vw;
-  padding-top: 1vw;
+  /* :  letter-spacing: 0.1em; */
 }
-.contentBox {
-  line-height: 3.4vw;
-  letter-spacing: 0.1vw;
-  padding: 1.5vw;
+
+.contentBox, .contentBox2 {
+  line-height: 3.5em;
+
 }
+
 .clickHereBox {
   display: flex;
-  font-size: 1vw;
+  font-size: 1em;
   justify-content: end;
   align-items: center;
   font-weight: 600;
-  padding: 1vw;
+  padding: 1em;
 }
+
 .clickHereBox-a {
   text-decoration: none;
   color: black;
-  padding: 0.3vw;
-  border-radius: 0.5vw;
+  padding: 0.3em;
+  border-radius: 0.5em;
 }
 
 /*BOX2------------------------------*/
 
 .imgBox2 {
-  display: flex;
-  border-radius: 10px;
-  width: 38vw;
-  height: auto;
-  box-shadow: 0.5vw 0vw 2vw 0.1vw rgba(0, 0, 0, 0.5);
+  box-shadow: 2px -2px 5px 1px rgba(0, 0, 0, 0.5) !important;
 }
+
 #box2 {
-  display: flex;
-  flex-direction: row;
   margin: 10% 10%;
-  align-items: center;
 }
+
 .allContentBox2 {
   background-color: greenyellow;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   font-family: Montserrat;
-  font-size: 1.3vw;
+  font-size: 1.3em;
   border-radius: 10px 0px 0px 10px;
-  box-shadow: -0.3vw 0vw 1vw 0.1vw rgba(0, 0, 0, 0.4);
-  height: 36vw;
+  box-shadow: 2px -1px 5px 1px rgba(0, 0, 0, 0.4);
 }
+
 .titleBox2 {
   font-family: Montserrat;
   display: flex;
   justify-content: center;
-  letter-spacing: 0.1vw;
-  padding-top: 1vw;
+  letter-spacing: 0.1em;
+  padding-top: 1em;
 }
-.contentBox2 {
-  line-height: 3.4vw;
-  letter-spacing: 0.1vw;
-  padding: 1.5vw;
-}
+
 .titleBox2 {
   font-family: Montserrat;
   font-size: 1.3em;
@@ -380,88 +114,60 @@ color: black;
   justify-content: center;
   letter-spacing: 1.1px;
 }
+
 .conentBox2 {
   font-family: Montserrat;
   font-size: 1.2em;
-  line-height: 1.5vw;
+  line-height: 1.5em;
   letter-spacing: 0.5px;
   line-height: 4.5vh;
   letter-spacing: 1.2px;
 }
+
 .clickHereBox2 {
   display: flex;
-  font-size: 1vw;
+  font-size: 1em;
   justify-content: start;
   align-items: center;
   font-weight: 600;
-  padding: 1vw;
+  padding: 1em;
 }
+
 .clickHereBox-a2 {
   text-decoration: none;
   color: black;
-  padding: 0.3vw;
-  border-radius: 0.5vw;
+  padding: 0.3em;
+  border-radius: 0.5em;
 }
 
 /*BOX3------------------------------*/
 
 .allContentBox3 {
-  background-color:yellow;
-}
-/*==============================FOOTER==============================*/
-
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: #14c2e8;
-  font-family: Montserrat;
-  align-items: center;
-  padding: 1em 0;
+  background-color: yellow !important;
 }
 
-/*----------------------------LISTS----------------------------*/
+/*============================MEDIA-QUERYS============================*/
 
-.listFooter-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-weight: 500.2;
-}
-.listFooter {
-  text-align: center;
-}
-.listFooter-li {
-  list-style: none;
-  line-height: 4em;
-}
-.listFooter-a {
-  text-decoration: none;
-  color: black;
+/*------------------1150px------------------*/
+
+@media (max-width:1150px) {
+  img {
+    display: none;
+  }
+
+  .allContentBox, .allContentBox2, .allContentBox3 {
+    border-radius: 2px;
+    width: 60vw;
+  }
 }
 
-/*----------------------------COPYRIGHT----------------------------*/
+/*------------------700px------------------*/
 
-.copyright {
-  border-top: 1px solid #00000050;
-  padding-top: 1em;
-  display: flex;
-  letter-spacing: 1px;
-}
-.copyright-a {
-  text-decoration: none;
-  color: black;
-}
-#socialFooter {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-.socialFooter-a {
-  height: 15px;
-}
-
-/*----------RIGHT-HOVER----------*/
-
-.copyright-a:hover {
-  color: white;
+@media (max-width:700px) {
+  .allContentBox, .allContentBox2, .allContentBox3 {
+    width: 80vw;
+  }
+  .contentBox, .contentBox2, .contentBox3 {
+    line-height: 2.7em;
+  }
 }

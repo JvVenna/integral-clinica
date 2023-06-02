@@ -7,7 +7,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
 }
 
 #submenu {
@@ -265,10 +265,10 @@ color: black;
 }
 
 .imgAd {
-  background-image: url(/img/imgAdEntrar.jpg);
+  background-image: url(/img/entrar-1.jpg);
 background-attachment: fixed;
 background-size: 100%;
-height: 20vw;
+height: 35em;
 background-position: 50%;
 }
 /*==============================BOX==============================*/

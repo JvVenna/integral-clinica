@@ -3,13 +3,6 @@
   padding: 0%;
 }
 
-/* ::============ALINHADOR==================================*/
-
-#alinhador {
-  width: 100%;
-  height: 11vh;
-}
-
 #title {
   font-family: montserrat;
   display: flex;

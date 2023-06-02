@@ -527,10 +527,10 @@ footer {
   .list_copyright {
     width: 90%;
   }
-}
 
-.copyright {
-  justify-content: space-between;
+  .copyright {
+    justify-content: space-between;
+  }
 }
 
 /*------------------1100px------------------*/
@@ -545,7 +545,7 @@ footer {
   }
 
   .list_copyright {
-    width: 95%;
+    width: 90%;
   }
 
   .home-titleBox2 {
@@ -581,6 +581,7 @@ footer {
 @media (max-width:900px) {
   #submenu {
     display: none;
+    background-color: #14c2e8;
   }
 
   .menuMenu {
@@ -606,7 +607,11 @@ footer {
 
 /*------------------520px------------------*/
 
-@media (max-width:520px) {.mapaFooter{width: 80%;}}
+@media (max-width:520px) {
+  .mapaFooter {
+    width: 80%;
+  }
+}
 
 
 /*============================Font-faces============================*/

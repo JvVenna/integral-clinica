@@ -540,6 +540,7 @@ footer {
     width: auto;
   }
 
+
   .btnMenu-a {
     padding-right: 0.5em;
   }
@@ -557,7 +558,7 @@ footer {
   }
 
   .dadContentBox2 {
-    width: 35%;
+    width: 25em;
     margin: 1em;
   }
 
@@ -588,6 +589,12 @@ footer {
     display: none;
   }
 
+  iframe.videoBox3 {
+    border-radius: 5px;
+    width: 90%;
+    height: 50vw;
+  }
+
   .listFooter-div {
     flex-direction: column;
   }
@@ -611,6 +618,13 @@ footer {
   .mapaFooter {
     width: 80%;
   }
+
+  iframe.videoBox3 {
+    width: 95%;
+  }
+.dadContentBox2{
+  width: 70%;
+}
 }
 
 

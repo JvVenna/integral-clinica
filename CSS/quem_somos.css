@@ -190,5 +190,12 @@ p.titleBox3 {
   p#title {
     margin: 1em auto;
   }
+}
 
+@media(max-width:520px) {
+  #imgBox {
+    border-radius: 2px;
+    width: 95%;
+    height: auto;
+  }
 }

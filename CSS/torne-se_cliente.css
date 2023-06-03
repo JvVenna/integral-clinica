@@ -10,7 +10,7 @@
   text-align: center;
   font-size: 1.5em;
   margin: 1em;
-  padding-bottom: 1em;
+  padding: 3em 0 1em 0;
   border-bottom: solid 2px rgba(0, 0, 0, 0.1);
   letter-spacing: 0.5px;
   margin: 3em 10%;
@@ -160,7 +160,16 @@
   .allContentBox, .allContentBox2, .allContentBox3 {
     width: 80vw;
   }
+
   .contentBox, .contentBox2, .contentBox3 {
     line-height: 2.7em;
+  }
+}
+
+/*------------------520px------------------*/
+
+@media (max-width:520px) {
+  .contentBox, .contentBox2 {
+    line-height: 2em;
   }
 }
